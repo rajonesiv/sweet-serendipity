@@ -1,0 +1,18 @@
+body {
+  background-color: #F8EDF1;
+}
+
+h1 {
+  color: #D53964;
+  font-size: 300%;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 150%;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
