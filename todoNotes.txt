@@ -1,0 +1,19 @@
+/*
+ * Notes for Todo-Show
+ * TODO: No problem, but additional code needs to be written, usually when
+ *    you are skipping something.
+ * FIXME: This works, sort of, but it could be done better.
+ *     (usually code written in a hurry that needs rewriting).
+ * CHANGED,
+ * XXX: Warning about possible pitfalls, can be used as NOTE:XXX:.
+ * IDEA,
+ * HACK: Not very well written or malformed code to circumvent a problem/bug.
+ *      Should be used as  HACK:FIXME:.
+ * NOTE: Description of how the code works (when it isn't self evident).
+ * REVIEW, NB,
+ * BUG: There is a problem here.
+ * QUESTION,
+ * COMBAK, TEMP, DEBUG, OPTIMIZE, and WARNING
+ *
+ *
+ */
