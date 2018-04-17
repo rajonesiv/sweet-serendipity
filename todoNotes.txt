@@ -1,0 +1,24 @@
+/*
+ * Notes for Todo-Show
+ * TODO: No problem, but additional code needs to be written, usually when
+ *    you are skipping something. Something that needs to be done. This could
+ *    be a feature to be added later, or indicating that something is a stub
+ *    and needs to be implemented.
+ * FIXME: This works, sort of, but it could be done better.
+ *     (usually code written in a hurry that needs rewriting). A subclass of
+ *     the TODO tag, indicating something is broken that needs to be fixed.
+ * UNDONE: A note to indicate a change which was a rollback or reversal of some
+ *     other change. This comment will usually indicate what was removed and why
+ * CHANGED,
+ * XXX: Warning about possible pitfalls, can be used as NOTE:XXX:.
+ * IDEA,
+ * HACK: Not very well written or malformed code to circumvent a problem/bug.
+ *      Should be used as  HACK:FIXME:.
+ * NOTE: Description of how the code works (when it isn't self evident).
+ * REVIEW, NB,
+ * BUG: There is a problem here. Known bug that should be fixed
+ * QUESTION,
+ * COMBAK, TEMP, DEBUG, OPTIMIZE, and WARNING
+ *
+ *
+ */

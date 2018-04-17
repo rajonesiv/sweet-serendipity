@@ -16,3 +16,8 @@ nav li {
   display: inline-block;
   color: white;
 }
+
+.container {
+  background-color: #F2728C;
+  border-radius: 5px;
+}

@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <meta name="author" content="Andrew Jones">
     <title>Employment</title>
   </head>
   <body>
@@ -19,5 +21,59 @@
     </header>
     <h2>Employment</h2>
     <p>Sweet Serendipity is a growing family ice cream chain and we are always looking for great staff. Whether you’re a cashier, a manager, or a dessert chef, we would love to have you as part of our team. If you are interested, please start by filling out our employment form here. We’ll get in touch with you from there! </p>
+    <div class="container">
+      <form action="submitEmployee" method="post">
+        <!-- NOTE Remove fieldset?? -->
+        <fieldset>
+          <legend>Employment Form</legend>
+          <!-- TODO Make firstName required -->
+          <label for="firstName">First Name: </label>
+          <!-- "for" value and "id" must be the same -->
+          <input type="text" name="firstName" id="firstName" />
+          <br/>
+          <!-- TODO Make lastName required -->
+          <label for="lastName">Last Name: </label>
+          <input type="text" name="lastName" id="lastName" />
+          <br/>
+          <!-- TODO Make phoneNumber required -->
+          <label for="phoneNumber">Phone Number: </label>
+          <input type="text" name="phoneNumber" id="phoneNumber" placeholder="(123) 456-7890" />
+          <br/>
+          <!-- TODO Make Email required -->
+          <label for="email">Your Email: </label>
+          <input type="text" name="email" id="email" />
+          <br/>
+          <label for="position">Position</label>
+          <!-- adding multiple="multiple" attribute allows one to select several in list -->
+          <!-- size determines how many options to show at once -->
+          <select name="position" id="position">
+            <option value="delivery">Delivery Driver</option>
+            <option value="personnel">In-Store Personnel</option>
+            <option value="manager">Manager</option>
+          </select>
+          <br/>
+          <p>Availability</p>
+          <input type="checkbox" id="days" name="availability" value="days" checked="checked" />
+          <label for="days">Days</label>
+          <br/>
+          <input type="checkbox" id="evenings" name="availability" value="evenings" />
+          <label for="evenings">Evenings</label>
+          <br/>
+          <input type="checkbox" id="lateNights" name="availability" value="lateNights" />
+          <label for="lateNights">Late Nights</label>
+          <br/>
+          <p>Are you over the age of 18?</p>
+          <input type="radio" name="age" value="yes" id="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="age" value="no" id="no" />
+          <label for="no">No</label>
+          <br/>
+          <p>Why should we hire you?</p>
+          <!-- text areas used for large amount of input text-->
+          <!-- placeholder text will disappear once text is typed-->
+          <textarea name="instructions" placeholder="You should hire me because..."></textarea>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
