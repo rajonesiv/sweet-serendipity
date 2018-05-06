@@ -17,6 +17,14 @@ body {
    */
 }
 
+.clearfix:before,
+.clearfix:after {
+  /* TODO: Test to see if content can be removed */
+  /* content: ""; */
+  display: block;
+  clear: both;
+}
+
 .container {
   background-image: url(images/roris_artisanal_ice_cream_facebook.0.jpg);
   background-repeat: no-repeat;
@@ -29,20 +37,13 @@ body {
 .box {
   background-color: #FED0BB;
   margin: 50px 0px 0px 50px;
-  width: 50%;
+  width: 48.5%;
   border: 2px solid pink;
   border-radius: 5px;
 }
 
 .box p {
   font-size: 110%;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 h1 {
@@ -222,7 +223,28 @@ form h4 {
   text-align: center;
 }
 
-label {
+.employment {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #EBEBD3;
+  margin: 10px 48% 10px 50px;
+  /* background-image: url(images/pizza.png);
+  background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* background-position: bottom right;
+  background-origin: content-box; */
+  padding: 10px;
+}
+
+.employment legend {
+  background-color: #0FA3B1;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.employment label {
   vertical-align: top;
   display: inline-block;
   width: 200px;
@@ -243,10 +265,13 @@ label {
 #availability {
   vertical-align: top;
   display: inline-block;
-  text-align: right;
-  position: relative;
+  text-align: left;
+  margin: 0;
+  width: 40%;
+  /*  position: relative;
   margin-left: 50px;
-  margin-top: -11px;
+  margin-top: -11px; */
+  border: 1px solid black;
 }
 
 input,
@@ -311,7 +336,7 @@ textarea {
 .check input {
   height: 28px;
   width: 28px;
-  margin: 0;
+  margin: 5px;
   opacity: 0;
   z-index: 1;
   position: relative;
@@ -481,7 +506,6 @@ legend {
 .center {
     margin: auto;
     width: 50%;
-    text-align: center;
 }
 
 #submit {
@@ -489,5 +513,6 @@ legend {
   position: relative;
   text-align: center;
   left: 130px;
+  font-weight: bold;
 }
 /*--- END OF FORM SETTINGS ---*/

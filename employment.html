@@ -10,7 +10,8 @@
     <div class="container">
       <header>
         <a href="index.html">
-          <img src="images/Ice-Cream-Logo-7.jpg" alt="Ice Cream Logo" height="107.4" width="200" />
+          <img src="images/Ice-Cream-Logo-7.jpg" alt="Ice Cream Logo" height="107.4"
+          width="200" style="border-radius:3px; margin-top:5px; margin-left:5px;" />
         </a>
         <nav>
           <ul>
@@ -32,7 +33,7 @@
       </div>
       <form action="submitEmployee" method="post">
         <!-- NOTE Remove fieldset?? -->
-        <fieldset>
+        <fieldset class="employment">
           <legend>Employment Form</legend>
           <label for="firstName">First Name: </label>
           <!-- "for" value and "id" must be the same -->
@@ -57,7 +58,7 @@
           </select>
           <br/>
           <div id="availability">
-            <p>Availability</p>
+            <label for="availability"></label>
             <input type="checkbox" id="days" name="availability" value="days" checked="checked" />
             <label for="days">Days</label>
             <br/>
@@ -78,7 +79,7 @@
           <!-- text areas used for large amount of input text-->
           <!-- placeholder text will disappear once text is typed-->
           <textarea name="instructions" placeholder="You should hire me because..."></textarea>
-          <input id="submit" type="submit" name="submit" value="Submit Your Order" />
+          <input id="submit" type="submit" name="submit" value="APPLY NOW!" />
         </fieldset>
       </form>
     </div>
