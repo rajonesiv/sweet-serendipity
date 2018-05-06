@@ -9,7 +9,8 @@
   <body>
     <header>
       <a href="index.html">
-          <img src="images/Ice-Cream-Logo-7.jpg" alt="Ice Cream Logo" height="107.4" width="200" />
+          <img src="images/Ice-Cream-Logo-7.jpg" alt="Ice Cream Logo"
+          id="logo" height="134.25" width="250" />
       </a>
       <nav>
         <ul>
@@ -22,30 +23,146 @@
         </ul>
       </nav>
     </header>
-    <table>
-      <!-- TODO create table for locations -->
-      <!-- TODO Add a "Store Hours" table for EACH Ice Cream store -->
-      <!-- TODO Add an “Order Now” link that looks like a button under each store that links to the Order.html page -->
-      <!-- Downtown Indianapolis, IN
-Phone: 317.252.0271
-Address: 427 Massachusetts Ave, Indianapolis, IN 46204
-Hours: Sun-Wed:10am-12am Thurs-Sat:10am-4am
+    <br/>
+    <h2>GRAB A TASTY TREAT AT A STORE NEAR YOU!</h2>
 
-Broad Ripple, IN
-Phone: 317.257.7500
-Address: 901 East 64th Street, Indianapolis, IN 46220
-Thurs-Sat:10am-4am
-
-Bloomington, IN
-Phone: 812.332.3502
-Address: 107 N Dunn Street, Bloomington, IN 47408
-Hours: Sun-Wed:10am-10pm Thurs-Sat:10am-11pm
-
-Carmel, IN
-Phone: 317.8101673
-Address:864 S Rangeline Road, Carmel, IN 46032
-Hours: Sun-Wed:10am-10pm Thurs-Sat:10am-11pm -->
-
-    </table>
+    <h3>Here are our locations:</h3>
+    <div class="section">
+      Downtown Indianapolis, IN <br/>
+      Phone: 317.252.0271 <br/>
+      Address: 427 Massachusetts Ave, Indianapolis, IN 46204 <br/>
+      <table>
+          <tr>
+              <th colspan="2">Hours:</th>
+          </tr>
+          <tr>
+              <td>Sun-Wed</td>
+              <td>10am-12am</td>
+          </tr>
+          <tr>
+              <td>Thurs-Sat</td>
+              <td>10am-4am</td>
+          </tr>
+      </table>
+      <form action="order.html">
+          <input type="submit" value="Order Now"/>
+      </form>
+    </div>
+    <div class="section">
+      Broad Ripple, IN <br/>
+      Phone: 317.257.7500 <br/>
+      Address: 901 East 64th Street, Indianapolis, IN 46220 <br/>
+      <table>
+          <tr>
+              <th colspan="2">Hours:</th>
+          </tr>
+          <tr>
+              <td>Thurs-Sat</td>
+              <td>10am-4am</td>
+          </tr>
+      </table>
+      <form action="order.html">
+          <input type="submit" value="Order Now"/>
+      </form>
+    </div>
+    <div class="section">
+      Bloomington, IN <br/>
+      Phone: 812.332.3502 <br/>
+      Address: 107 N Dunn Street, Bloomington, IN 47408 <br/>
+      <table>
+          <tr>
+              <th colspan="2">Hours:</th>
+          </tr>
+          <tr>
+              <td>Sun-Wed</td>
+              <td>10am-10pm</td>
+          </tr>
+          <tr>
+              <td>Thurs-Sat</td>
+              <td>10am-11pm</td>
+          </tr>
+      </table>
+      <form action="order.html">
+          <input type="submit" value="Order Now"/>
+      </form>
+    </div>
+    <div class="section">
+      Carmel, IN <br/>
+      Phone: 317.8101673 <br/>
+      Address:864 S Rangeline Road, Carmel, IN 46032 <br/>
+      <table>
+          <tr>
+              <th colspan="2">Hours:</th>
+          </tr>
+          <tr>
+              <td>Sun-Wed</td>
+              <td>10am-10pm</td>
+          </tr>
+          <tr>
+              <td>Thurs-Sat</td>
+              <td>10am-11pm</td>
+          </tr>
+      </table>
+      <form action="order.html">
+          <input type="submit" value="Order Now"/>
+      </form>
+    </div>
+    <!-- <table class="center">
+      <tr>
+        <th colspan="4">Stores</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Downtown Indianapolis, IN</td>
+        <td class="text-right">Phone:</td>
+        <td colspan="2">317.252.0271</td>
+      </tr>
+      <tr>
+        <td class="text-right">Address:</td>
+        <td colspan="2">427 Massachusetts Ave, Indianapolis, IN 46204</td>
+      </tr>
+      <tr>
+        <td class="text-right">Hours:</td>
+        <td colspan="2">Sun-Wed: 10am-12am Thurs-Sat: 10am-4am</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Broad Ripple, IN</td>
+        <td class="text-right">Phone:</td>
+        <td colspan="2">317.257.7500</td>
+      </tr>
+      <tr>
+        <td class="text-right">Address:</td>
+        <td colspan="2">901 East 64th Street, Indianapolis, IN 46220</td>
+      </tr>
+      <tr>
+        <td class="text-right">Hours:</td>
+        <td colspan="2">Thurs-Sat: 10am-4am</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Bloomington, IN</td>
+        <td class="text-right">Phone:</td>
+        <td colspan="2">812.332.3502</td>
+      </tr>
+      <tr>
+        <td class="text-right">Address:</td>
+        <td colspan="2">107 N. Dunn Street, Bloomington, IN 47408</td>
+      </tr>
+      <tr>
+        <td class="text-right">Hours:</td>
+        <td colspan="2">Sun-Wed: 10am-10pm Thurs-Sat: 10am-11am</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Carmel, IN</td>
+        <td class="text-right">Phone:</td>
+        <td colspan="2">317.810.1673</td>
+      </tr>
+      <tr>
+        <td class="text-right">Address:</td>
+        <td colspan="2">864 S. Rangeline Road, Carmel, IN 46032</td>
+      </tr>
+      <tr>
+        <td class="text-right">Hours:</td>
+        <td colspan="2">Sun-Wed: 10am-10pm Thurs-Sat: 10am-11pm</td>
+      </tr>
+    </table> -->
   </body>
 </html>

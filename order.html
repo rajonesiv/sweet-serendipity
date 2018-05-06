@@ -23,66 +23,275 @@
       </nav>
     </header>
     <h2>Order Now</h2>
-    <p>Scoops</p>
-    <ul>
-      <li>1 scoop $3.52</li>
-      <li>2 scoops $5.56</li>
-    </ul>
-    <p>Toppings $.25 each</p>
-	  <ul>
-      <li>Whipped cream (Free)</li>
-      <li>Maraschino cherry (Free)</li>
-      <li>Chocolate syrup</li>
-      <li>Carmel syrup</li>
-      <li>Oreo pieces</li>
-      <li>Brownie bites</li>
-      <li>Rainbow sprinkles</li>
-      <li>M &amp; Ms</li>
-      <li>Chocolate chips</li>
-      <li>Peanut butter cup</li>
-      <li>Peanuts</li>
-      <li>Cookie dough</li>
-      <li>Fruit</li>
-      <li>Gummy bears</li>
-    </ul>
-    <p>Creations</p>
-    <ul>
-      <li>Dream Special  $8.53</li>
-      <p>One scoop of chocolate between two scoops of vanilla ice cream, hot fudge and peanut
-  butter toppings, real whipped cream, nuts
-  and a cherry over sliced banana.</p>
-      <li>Happy Chance  $8.53</li>
-      <p>Three scoops of ice cream, chocolate chips, hot
-  fudge, crushed Oreos, real whipped cream and
-  a cherry.</p>
-      <li>Lucky Break Sunday   $6.88</li>
-      <p>Two scoops of ice cream covered with your choice of two toppings, real whipped cream, nuts and a cherry</p>
-      <li>The Sweet Split  $8.53</li>
-      <p>Vanilla, chocolate and strawberry ice cream, chocolate syrup, marshmallow and pineapple toppings, real whipped cream, nuts and a cherry all atop a banana.</p>
-    </ul>
-    <p>On the Go</p>
-    <ul>
-      <li>Half Gallon Ice Cream  $18.43</li>
-      <li>Quart of Ice Cream $11.11</li>
-    </ul>
-    <p>Shakes & Malts</p>
-    <ul>
-      <li>Malt  $5.94</li>
-      <p>Creamy malts are made-to-order with any flavor of ice cream and flavor of syrup</p>
-      <li>Shake $5.78</li>
-      <p>Thick delicious shakes made-to-order with any flavor of ice cream and one flavor of syrup.</p>
-    </ul>
+    <!-- <div class="orderToppings">
+      <h3>Scoops</h3>
+      <ul>
+        <li>1 scoop $3.52</li>
+        <li>2 scoops $5.56</li>
+      </ul>
+    </div> -->
+    <!-- <div class="orderToppings">
+      <h3>Toppings $.25 each</h3>
+      <ul>
+        <li>Whipped cream (Free)</li>
+        <li>Maraschino cherry (Free)</li>
+        <li>Chocolate syrup</li>
+        <li>Carmel syrup</li>
+        <li>Oreo pieces</li>
+        <li>Brownie bites</li>
+        <li>Rainbow sprinkles</li>
+        <li>M &amp; Ms</li>
+        <li>Chocolate chips</li>
+        <li>Peanut butter cup</li>
+        <li>Peanuts</li>
+        <li>Cookie dough</li>
+        <li>Fruit</li>
+        <li>Gummy bears</li>
+      </ul>
+    </div> -->
+    <!-- <div class="orderToppings">
+      <h3>Creations</h3>
+      <ul>
+        <li>Dream Special  $8.53</li>
+        <p>One scoop of chocolate between two scoops of vanilla ice cream, hot fudge and peanut
+    butter toppings, real whipped cream, nuts
+    and a cherry over sliced banana.</p>
+        <li>Happy Chance  $8.53</li>
+        <p>Three scoops of ice cream, chocolate chips, hot
+    fudge, crushed Oreos, real whipped cream and
+    a cherry.</p>
+        <li>Lucky Break Sunday   $6.88</li>
+        <p>Two scoops of ice cream covered with your choice of two toppings, real whipped
+          cream, nuts and a cherry.</p>
+        <li>The Sweet Split  $8.53</li>
+        <p>Vanilla, chocolate and strawberry ice cream, chocolate syrup, marshmallow and
+          pineapple toppings, real whipped cream, nuts and a cherry all atop a banana.</p>
+      </ul>
+    </div> -->
+    <!-- <div class="orderToppings">
+      <h3>On the Go</h3>
+      <ul>
+        <li>Half Gallon Ice Cream  $18.43</li>
+        <li>Quart of Ice Cream $11.11</li>
+      </ul>
+    </div> -->
+    <!-- <div class="orderToppings">
+      <h3>Shakes & Malts</h3>
+      <ul>
+        <li>Malt  $5.94</li>
+        <p>Creamy malts are made-to-order with any flavor of ice cream and flavor of syrup</p>
+        <li>Shake $5.78</li>
+        <p>Thick delicious shakes made-to-order with any flavor of ice cream and one flavor of syrup.</p>
+      </ul>
+    </div> -->
 
-    <!-- TODO You will create an ice cream order form. People are able to choose either one scoop or two scoops. They can add as many toppings as they want.
-
-People can only choose only one special. Each special must have a picture.
-
-Shakes & Malts:  People can choose one or both and then have an input for each where they can choose between the following ice cream flavors: Vanilla, Chocolate, Strawberry, Mint Chocolate Chip, Oreo, Cookie Dough -->
-    <!--TODO Payment Information
-Include an option for a user to pay with Cash, Check, or Credit Card. If they are paying with a credit card, create a field that allows users to type in their credit card number in a password-protected field. -->
-
-    <!-- TODO Include an email address field and have the text state that they will email the user when their order will be ready. -->
-
-    <!-- TODO Include a submit button. -->
+    <!-- TODO Calculate the price of the order! (Using JavaScript?) -->
+    <form action="iceCreamOrder.php" method="POST">
+      <fieldset>
+        <legend>Create Your Dessert</legend>
+        <label for="scoop">I would like </label>
+        <!-- adding multiple="multiple" attribute allows one to select several in list -->
+        <!-- size determines how many options to show at once -->
+        <select name="scoop" id="scoop">
+          <option value="select">Select an option</option>
+          <option value="oneScoop">One scoop</option>
+          <option value="twoScoop">Two scoops</option>
+        </select>
+        <label>on my ice cream.</label>
+        <br/>
+        <h4>Toppings ($0.25 each)</h4>
+        <!-- name is topping since the checkboxes are all grouped -->
+        <!-- checked="checked" will preset the box to be checked off -->
+        <div class="ingredients">
+          <input type="checkbox" id="whipCream" name="topping" value="whipCream" />
+          <label for="whipCream">Whipped Cream (Free)</label>
+          <br/>
+          <input type="checkbox" id="cherry" name="topping" value="cherry" />
+          <label for="cherry">Maraschino Cherry (Free)</label>
+          <br/>
+          <input type="checkbox" id="chocoSyrup" name="topping" value="chocoSyrup" />
+          <label for="chocoSyrup">Chocolate Syrup</label>
+          <br/>
+          <input type="checkbox" id="carmelSyrup" name="topping" value="carmelSyrup" />
+          <label for="carmelSyrup">Carmel Syrup</label>
+          <br/>
+          <input type="checkbox" id="oreo" name="topping" value="oreo" />
+          <label for="oreo">Oreo Pieces</label>
+          <br/>
+        </div>
+        <div class="ingredients">
+          <input type="checkbox" id="brownie" name="topping" value="brownie" />
+          <label for="brownie">Brownie Bites</label>
+          <br/>
+          <input type="checkbox" id="sprinkles" name="topping" value="sprinkles" />
+          <label for="sprinkles">Rainbow Sprinkles</label>
+          <br/>
+          <input type="checkbox" id="mnm" name="topping" value="mnm" />
+          <label for="mnm">M &amp; Ms</label>
+          <br/>
+          <input type="checkbox" id="chocoChips" name="topping" value="chocoChips" />
+          <label for="chocoChips">Chocolate Chips</label>
+          <br/>
+          <input type="checkbox" id="PBcups" name="topping" value="PBcups" />
+          <label for="PBcups">Peanut Butter Cups</label>
+          <br/>
+        </div>
+        <div class="ingredients">
+          <input type="checkbox" id="peanuts" name="topping" value="peanuts" />
+          <label for="peanuts">Peanuts</label>
+          <br/>
+          <input type="checkbox" id="cookieDough" name="topping" value="cookieDough" />
+          <label for="cookieDough">Cookie Dough</label>
+          <br/>
+          <input type="checkbox" id="fruit" name="topping" value="fruit" />
+          <label for="fruit">Fruit</label>
+          <br/>
+          <input type="checkbox" id="gummyBear" name="topping" value="gummyBear" />
+          <label for="gummyBear">Gummy Bears</label>
+          <br/>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Choose One of Ours</legend>
+        <div class="creations">
+          <h3>Choose one of our four special items!</h3>
+          <label class="labl">
+            <input type="radio" name="specials" value="dream"/>
+            <div class="specialDescription" id="dream">
+              <h5>Dream Special......$8.53</h5>
+              <p>One scoop of chocolate between two scoops of vanilla ice cream, hot fudge and peanut
+          butter toppings, real whipped cream, nuts
+          and a cherry over sliced banana.</p>
+            </div>
+          </label>
+          <label class="labl">
+            <input type="radio" name="specials" value="happy"/>
+            <div class="specialDescription" id="happy">
+              <h5>Happy Chance......$8.53</h5>
+              <p>Three scoops of ice cream, chocolate chips, hot
+          fudge, crushed Oreos, real whipped cream and
+          a cherry.</p>
+            </div>
+          </label>
+          <label class="labl">
+            <input type="radio" name="specials" value="luckyBreak"/>
+            <div class="specialDescription" id="lucky">
+              <h5>Lucky Break Sunday......$6.88</h5>
+              <p>Two scoops of ice cream covered with your choice of two toppings, real whipped
+                cream, nuts and a cherry.</p>
+            </div>
+          </label>
+          <label class="labl">
+            <input type="radio" name="specials" value="sweetSplit"/>
+            <div class="specialDescription" id="sweet">
+              <h5>The Sweet Split......$8.53</h5>
+              <!-- <img src="images/luckybreak.jpg" alt="banana split ice cream known as the lucky break"
+              class="specialPic" height="100" width="150"/> -->
+              <p>Vanilla, chocolate and strawberry ice cream, chocolate syrup, marshmallow and
+                pineapple toppings, real whipped cream, nuts and a cherry all atop a banana.</p>
+            </div>
+          </label>
+          <!-- <input type="radio" name="specials" value="dream" id="dream" /> -->
+          <!-- <label for="dream">Dream Special......$8.53</label> -->
+          <!-- <p class="specialDescription">One scoop of chocolate between two scoops of vanilla ice cream, hot fudge and peanut
+      butter toppings, real whipped cream, nuts
+      and a cherry over sliced banana.</p> -->
+          <!-- <input type="radio" name="specials" value="happy" id="happy" />
+          <label for="happy">Happy Chance......$8.53</label>
+          <p class="specialDescription">Three scoops of ice cream, chocolate chips, hot
+      fudge, crushed Oreos, real whipped cream and
+      a cherry.</p> -->
+          <!-- <input type="radio" name="specials" value="luckyBreak" id="luckyBreak" />
+          <label for="luckyBreak">Lucky Break Sunday......$6.88</label>
+          <p class="specialDescription">Two scoops of ice cream covered with your choice of two toppings, real whipped
+            cream, nuts and a cherry.</p>
+          <input type="radio" name="specials" value="sweetSplit" id="sweetSplit" />
+          <label for="sweetSplit">The Sweet Spit......$8.53</label>
+          <p class="specialDescription">Vanilla, chocolate and strawberry ice cream, chocolate syrup, marshmallow and
+            pineapple toppings, real whipped cream, nuts and a cherry all atop a banana.</p> -->
+        </div>
+      </fieldset>
+      <fieldset>
+          <legend>On The Go</legend>
+          <label class="onthegoButton">
+            <input type="radio" name="onthego" value="half"/>
+            <div class="specialDescription">
+              <h4>Half Gallon Ice Cream......$18.43</h4>
+            </div>
+          </label>
+          <label class="onthegoButton">
+            <input type="radio" name="onthego" value="quart"/>
+            <div class="specialDescription">
+              <h4>Quart of Ice Cream......$11.11</h4>
+            </div>
+          </label>
+      </fieldset>
+      <fieldset>
+          <legend>Shakes and Malts</legend>
+          <div class="check">
+            <input type="checkbox" name="shakeMalt" id="malt" value="shakeMalt"/>
+            <label for="shakeMalt"><div></div></label>
+          </div>
+          <h4 class="clearfix">Malt......$5.94</h4>
+          <p class="clearfix">Creamy malts are made-to-order with any flavor of ice cream and flavor of syrup.</p>
+          <div class="center">
+            <label for="flavor">I want </label>
+            <!-- adding multiple="multiple" attribute allows one to select several in list -->
+            <!-- size determines how many options to show at once -->
+            <select name="flavor" id="flavor">
+              <option value="select">Select an option</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="mintcc">Mint Chocolate Chip</option>
+              <option value="oreo">Oreo</option>
+              <option value="cookieDough">Cookie Dough</option>
+            </select>
+            <label for="flavor">for my malt.</label>
+          </div>
+          <br/>
+          <br/>
+          <div class="check">
+            <input type="checkbox" name="shakeMalt" id="shake" value="shakeMalt"/>
+            <label for="shakeMalt"><div></div></label>
+          </div>
+          <h4 class="clearfix">Shake......$5.78</h4>
+          <p class="clearfix">Thick delicious shakes made-to-order with any flavor of ice cream and one flavor of syrup.</p>
+          <div class="center">
+            <label for="flavor">I want </label>
+            <!-- adding multiple="multiple" attribute allows one to select several in list -->
+            <!-- size determines how many options to show at once -->
+            <select name="flavor" id="flavor">
+              <option value="select">Select an option</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="mintcc">Mint Chocolate Chip</option>
+              <option value="oreo">Oreo</option>
+              <option value="cookieDough">Cookie Dough</option>
+            </select>
+            <label for="flavor">for my shake.</label>
+          </div>
+          <br/>
+      </fieldset>
+      <fieldset>
+        <legend>Payment Information</legend>
+        <p>How would you like to pay for your order?</p>
+        <input type="radio" name="payment" value="cash" id="cash" />
+        <label for="cash">Cash</label>
+        <input type="radio" name="payment" value="check" id="check" />
+        <label for="check">Check</label>
+        <input type="radio" name="payment" value="creditCard" id="creditCard" checked/>
+        <label for="creditCard">Credit Card</label>
+        <!-- using password for the text type will pw protect the input; values will appear as dots-->
+        <input type="password" name="ccardNum" />
+        <br/>
+        <p>We aim for the highest quality service for our customers. As such, we will email you when your order is ready.</p>
+        <label for="email">Email Address: </label>
+        <input type="text" id="email" name="email" required/>
+        <br/>
+        <input id="submit" type="submit" name="submit" value="Submit Your Order" />
+      </fieldset>
+    </form>
   </body>
 </html>
