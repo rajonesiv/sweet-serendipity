@@ -12,25 +12,17 @@
     <body>
       <header>
         <a href="index.html">
-          <img src="images/logoS16.png" alt="Spring 2018 Logo" height="45" width="177" />
+            <img src="images/Ice-Cream-Logo-7.jpg" alt="Ice Cream Logo"
+            height="107.4" width="200" />
         </a>
         <nav>
           <ul>
-            <li>
-              <a href="courseInfo.html">COURSE</a>
-            </li>
-            <li>
-              <a href="schedule.html">SCHEDULE</a>
-            </li>
-            <li>
-              <a href="resources.html">RESOURCES</a>
-            </li>
-            <li>
-              <a href="class.html">CLASS ROSTER</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTACT</a>
-            </li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="company.html">COMPANY</a></li>
+            <li><a href="stores.html">STORES</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="employment.html">EMPLOYMENT</a></li>
+            <li><a href="feedback.html">FEEDBACK</a></li>
           </ul>
         </nav>
       </header>
@@ -45,20 +37,19 @@
         <h3>Contact Us</h3>
         <p>Thank you for submitting your comments! We'll get back to you as soon as possible.</p>
     </main>
-
     <footer>
-        <ul>
-            <li>
-                <!-- target="_blank" opens butler in a new tab -->
-                <a href="http://www.butler.edu" target="_blank">BUTLER UNIVERSITY</a>
-            </li>
-            <li>
-                <a href="mailto:crector@butler.edu">IDEAS?</a>
-            </li>
-            <li>
-                <a href="contact.html">COMMENTS?</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <!-- target="_blank" opens butler in a new tab -->
+          <a href="https://en.wikipedia.org/wiki/Ice_cream" target="_blank">ABOUT US</a>
+        </li>
+        <li>
+          <a href="feedback.html">SUGGESTIONS</a>
+        </li>
+      </ul>
+      <summary>
+          <p>Copyright &copy; 2018</p>
+      </summary>
     </footer>
     </body>
 </html>

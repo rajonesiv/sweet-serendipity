@@ -24,7 +24,7 @@
           </ul>
         </nav>
       </header>
-      <div class="box">
+      <div class="center box">
         <h2>Employment</h2>
         <p>Sweet Serendipity is a growing family ice cream chain and we are always looking for great staff.
           Whether you’re a cashier, a manager, or a dessert chef, we would love to have you as part of our team.
@@ -32,8 +32,7 @@
           with you from there! </p>
       </div>
       <form action="submitEmployee" method="post">
-        <!-- NOTE Remove fieldset?? -->
-        <fieldset class="employment">
+        <fieldset class="center" id="employment">
           <legend>Employment Form</legend>
           <label for="firstName">First Name: </label>
           <!-- "for" value and "id" must be the same -->
@@ -58,7 +57,7 @@
           </select>
           <br/>
           <div id="availability">
-            <label for="availability"></label>
+            <label for="availability">Availability</label> <br/>
             <input type="checkbox" id="days" name="availability" value="days" checked="checked" />
             <label for="days">Days</label>
             <br/>
@@ -70,18 +69,34 @@
             <br/>
           </div>
           <p>Are you over the age of 18?</p>
-          <input type="radio" name="age" value="yes" id="yes" />
-          <label for="yes">Yes</label>
-          <input type="radio" name="age" value="no" id="no" />
-          <label for="no">No</label>
+          <div id="age18">
+            <input type="radio" name="age" value="yes" id="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="age" value="no" id="no" />
+            <label for="no">No</label>
+          </div>
           <br/>
           <p>Why should we hire you?</p>
           <!-- text areas used for large amount of input text-->
           <!-- placeholder text will disappear once text is typed-->
-          <textarea name="instructions" placeholder="You should hire me because..."></textarea>
-          <input id="submit" type="submit" name="submit" value="APPLY NOW!" />
+          <textarea name="instructions" id="hire" placeholder="You should hire me because..."></textarea>
+          <input id="submitEmployee" class="clearfix" type="submit" name="submit" value="APPLY NOW!" />
         </fieldset>
       </form>
+      <footer>
+        <ul>
+          <li>
+            <!-- target="_blank" opens butler in a new tab -->
+            <a href="https://en.wikipedia.org/wiki/Ice_cream" target="_blank">ABOUT US</a>
+          </li>
+          <li>
+            <a href="feedback.html">SUGGESTIONS</a>
+          </li>
+        </ul>
+        <summary>
+            <p>Copyright &copy; 2018</p>
+        </summary>
+      </footer>
     </div>
   </body>
 </html>
